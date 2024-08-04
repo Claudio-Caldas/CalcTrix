@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+</head>
+
+<body>
+    <div class="calculator">
+
+        <div style="text-align: center; padding-top: 15px;" class="phi"><img src="./images/Phi.png" alt="Phi"></div>
+        <p style="color:#D0F5A9; text-align: center; font-size: 1.2em; padding:1px 0px; margin: 0 12px; background-color: rgba(0, 0, 0, 0.678); border-radius: 20px;"><strong>The CalcTrix</strong></p>
+        <div class="screen">
+            <p id="screen-relay"></p>
+        
+            <p id="output"></p>
+          </div>
+          <div id="buttons">
+            <div class="linha-um">
+                <ul>
+                  <li class="ac" style="background-color:#5b7035; color:#e3ecda;">AC</li>
+                  <li class="ce" style="background-color:#5b7035; color:#e3ecda;">CE</li>
+                  <li class="percentual" style="background-color:#2a301f; color:#e3ecda;">%</li>
+                  <li class="soma" style="background-color:#2a301f; color:#e3ecda;">+</li>
+                 
+                </ul>
+              </div>
+
+            <div class="linha-dois">
+              <ul>
+                <li class="7">7</li>
+                <li class="8">8</li>
+                <li class="9">9</li>
+                <li class="divide" style="background-color:#2a301f; color:#e3ecda;">/</li>
+              </ul>
+            </div><!-- / first row -->
+        
+            <div class="linha-tres">
+              <ul>
+                <li class="4">4</li>
+                <li class="5">5</li>
+                <li class="6">6</li>
+                <li class="multiplica" style="background-color:#2a301f; color:#e3ecda;">*</li>
+              </ul>
+            </div><!-- / second row -->
+        
+            <div class="linha-quatro">
+              <ul>
+                <li class="1">1</li>
+                <li class="2">2</li>
+                <li class="3">3</li>
+                <li class="subtrai" style="background-color:#2a301f; color:#e3ecda;">-</li>
+              </ul>
+            </div><!-- / third row -->
+        
+            <div class="linha-cinco">
+              <ul>
+                <li class="0">0</li>
+                <li class="decimal">.</li>
+               
+                <li class="igual" style="width: 139px; background-color:#2a301f; color:#e3ecda; border:2px solid #C5E48B">=</li>
+              </ul>
+            </div><!-- / fourth row -->
+            
+            <!-- / fifth row -->
+            
+        
+          </div><!-- / buttons-->
+    </div>
+    <footer>
+      <div class="footer">
+        <p>Desenvolvido por <a href="https://github.com/Claudio-Caldas" target="_blank">
+         Cláudio Caldas 
+        </a></p>
+      </div>
+    </footer>
+    
+    <script src="js/CalcController.js"></script>
+    <script src="js/calculator.js"></script>
+</body>
+
+</html>

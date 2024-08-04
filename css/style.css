@@ -1,0 +1,167 @@
+
+body {
+    background-color: #D0F5A9;
+    /*background-image: url(../img/calcback.jpeg);*/
+    background-size: cover;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 700;
+    
+}
+
+/****************************/
+
+.calculator {
+    border: 2px solid gray;
+    max-width: 320px;
+    min-height: 320px;
+    min-width: 320px;
+    margin-top: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 7px;
+    background: url(../images/Matrix_Big.jpeg);
+    background-position: center;
+   
+    /*background: -webkit-linear-gradient(#262626, #424040);
+background: -o-linear-gradient(#262626, #424040);
+background: -moz-linear-gradient(#262626, #424040);
+background: linear-gradient(#262626, #424040);*/
+}
+
+.phi img {
+    transition: .5s;
+}
+.phi img:hover {
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+/* Screen ************************/
+
+.screen {
+    width: 90%;
+    background-color: #D0F5A9;
+    height: 40px;
+    margin: auto;
+    margin-top: 20px;
+    color: black;
+    text-align: right;
+    border: 2px solid rgb(0, 0, 0);
+    font-size: 1.5em;
+    border-radius: 10px;
+}
+
+#screen-relay {
+    position: absolute;
+    margin-left: 10px;
+
+}
+
+.screen p {
+    float: right;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+
+/* Buttons **********************/
+
+.linha-um ul li,
+.linha-dois ul li,
+.linha-tres ul li,
+.linha-quatro ul li,
+.linha-cinco ul li
+ {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    background-color: #C5E48B;
+    width: 65px;
+    height: 40px;
+    border-radius: 5px;
+    padding-top: 23px;
+    font-size: 1.5em;
+    /*background-color:#08D3D3;*/
+    /*color:#9FF7F7;*/
+    
+
+}
+
+.linha-um ul li:hover,
+.linha-dois ul li:hover,
+.linha-tres ul li:hover,
+.linha-quatro ul li:hover,
+.linha-cinco ul li:hover,
+#clear:hover {
+
+    /*background-color: rgb(255, 255, 255, 90);*/
+    background-color: black;
+    color: #e1ebd0;
+    opacity: .77;
+    border-radius: 5px;
+    font-weight: 800;
+    cursor: pointer;
+    transform: scale(1.05);
+    border: 2px solid #C5E48B ;
+}
+
+.linha-dois ul,
+.linha-tres ul,
+.linha-quatro ul,
+.linha-cinco ul {
+    margin-top: -10px;
+    transition: .5s;
+}
+
+#clear, #image {
+    color: rgb(15, 26, 15);
+}
+
+#buttons {
+    margin-left: -22px;
+    margin-right: -2px;
+    margin-top: 20px;
+}
+
+#buttons:hover {
+   
+    margin-top: 20px;
+    cursor: pointer;
+    
+
+}
+
+footer {
+    background-image: url(../images/Matrix_Big.jpeg);
+   background-position: center;
+    text-shadow: 0px 0px 10px 15px black;
+    color: #C5E48B;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    margin-top: -15%;
+    text-align: center;
+   width: 80vw;
+   border-radius: 50%;
+   overflow: hidden;
+    
+}
+
+footer a {
+    color: #C5E48B;
+    text-decoration: none;
+}
+
+footer a:hover {
+    background-color: rgba(0, 0, 0, 0.63);
+    color: #C5E48B;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+@media screen and (max-width:460px) {
+    
+    footer {
+        font-size: .87em;
+    }
+}
+
