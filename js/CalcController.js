@@ -44,12 +44,12 @@ class CalcController {
     }
     setError_01() {
 
-        this.displayCalc = "ERRO..."
+        this.displayCalc = "ERROR..."
 
     }
     setError_02() {
 
-        this.displayCalc = "> 18 dígitos..."
+        this.displayCalc = "> 18 digits..."
     }
     isOperator(value) {
 
@@ -66,6 +66,10 @@ class CalcController {
 
         }
 
+        if (this.lastNumber > 18) {
+            this.setError_02()
+        }
+
     }
     getResult() {
 
@@ -75,6 +79,7 @@ class CalcController {
             setTimeout(() => this.setError_01(), 1);
         }
 
+        
     }
 
     calc() {
@@ -118,6 +123,13 @@ class CalcController {
         }
 
         this.setLastNumberToDisplay();
+
+        let converted = result.toString()
+      
+
+       if (converted.length > 18) {
+        this.setError_02()
+       }
 
     }
     getLastItem(isOperator = true) {

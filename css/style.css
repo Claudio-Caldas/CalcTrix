@@ -152,10 +152,10 @@ footer a {
 }
 
 footer a:hover {
-    background-color: rgba(0, 0, 0, 0.63);
-    color: #C5E48B;
+    background-color: #C5E48B;
+    color: #343b25;
     border-radius: 3px;
-    padding: 5px;
+    padding: 3px;
 }
 
 @media screen and (max-width:460px) {
